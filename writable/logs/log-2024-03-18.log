@@ -1,0 +1,535 @@
+ERROR - 2024-03-18 04:36:11 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\cig4ebook\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\htdocs\cig4ebook\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 C:\xampp\htdocs\cig4ebook\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\cig4ebook\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\cig4ebook\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\cig4ebook\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\cig4ebook\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\cig4ebook\app\Controllers\Books.php(44): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\cig4ebook\system\CodeIgniter.php(941): App\Controllers\Books->listBooks()
+#8 C:\xampp\htdocs\cig4ebook\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Books))
+#9 C:\xampp\htdocs\cig4ebook\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\cig4ebook\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\cig4ebook\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\cig4ebook\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\cig4ebook\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\cig4ebook\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\cig4ebook\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\cig4ebook\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\cig4ebook\app\Controllers\Books.php(44): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\cig4ebook\system\CodeIgniter.php(941): App\Controllers\Books->listBooks()
+#7 C:\xampp\htdocs\cig4ebook\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Books))
+#8 C:\xampp\htdocs\cig4ebook\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\cig4ebook\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-18 04:36:11 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `books`', [], false)
+ 3 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Books.php(44): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Books->listBooks()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Books))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-18 04:36:16 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\cig4ebook\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\htdocs\cig4ebook\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 C:\xampp\htdocs\cig4ebook\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\cig4ebook\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\cig4ebook\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\cig4ebook\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\cig4ebook\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\cig4ebook\app\Controllers\Books.php(44): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\cig4ebook\system\CodeIgniter.php(941): App\Controllers\Books->listBooks()
+#8 C:\xampp\htdocs\cig4ebook\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Books))
+#9 C:\xampp\htdocs\cig4ebook\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\cig4ebook\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\cig4ebook\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\cig4ebook\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\cig4ebook\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\cig4ebook\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\cig4ebook\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\cig4ebook\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\cig4ebook\app\Controllers\Books.php(44): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\cig4ebook\system\CodeIgniter.php(941): App\Controllers\Books->listBooks()
+#7 C:\xampp\htdocs\cig4ebook\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Books))
+#8 C:\xampp\htdocs\cig4ebook\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\cig4ebook\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-18 04:36:16 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `books`', [], false)
+ 3 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Books.php(44): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Books->listBooks()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Books))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-18 04:36:45 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\cig4ebook\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\htdocs\cig4ebook\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 C:\xampp\htdocs\cig4ebook\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\cig4ebook\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\cig4ebook\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `bo...', Array, false)
+#4 C:\xampp\htdocs\cig4ebook\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\cig4ebook\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\cig4ebook\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\cig4ebook\system\BaseModel.php(713): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\cig4ebook\app\Controllers\Books.php(35): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\cig4ebook\system\CodeIgniter.php(941): App\Controllers\Books->addBook()
+#10 C:\xampp\htdocs\cig4ebook\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Books))
+#11 C:\xampp\htdocs\cig4ebook\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\cig4ebook\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\cig4ebook\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\cig4ebook\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\cig4ebook\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\cig4ebook\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `bo...', Array, false)
+#3 C:\xampp\htdocs\cig4ebook\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#4 C:\xampp\htdocs\cig4ebook\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#5 C:\xampp\htdocs\cig4ebook\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, false)
+#6 C:\xampp\htdocs\cig4ebook\system\BaseModel.php(713): CodeIgniter\Model->insert(Array, false)
+#7 C:\xampp\htdocs\cig4ebook\app\Controllers\Books.php(35): CodeIgniter\BaseModel->save(Array)
+#8 C:\xampp\htdocs\cig4ebook\system\CodeIgniter.php(941): App\Controllers\Books->addBook()
+#9 C:\xampp\htdocs\cig4ebook\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Books))
+#10 C:\xampp\htdocs\cig4ebook\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\cig4ebook\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-03-18 04:36:45 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `books` (`title`, `category`, `isbn`, `author`, `cover_image`, `book_file`) VALUES (:title:, :category:, :isbn:, :author:, :cover_image:, :book_file:)', [...], false)
+ 3 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], false)
+ 6 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->insert([...], false)
+ 7 APPPATH\Controllers\Books.php(35): CodeIgniter\BaseModel->save([...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Books->addBook()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Books))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-18 04:39:03 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\cig4ebook\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\htdocs\cig4ebook\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', '', '', 'swe2', 3306, '', 0)
+#1 C:\xampp\htdocs\cig4ebook\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\cig4ebook\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\cig4ebook\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `bo...', Array, false)
+#4 C:\xampp\htdocs\cig4ebook\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\cig4ebook\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\cig4ebook\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\cig4ebook\system\BaseModel.php(713): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\cig4ebook\app\Controllers\Books.php(35): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\cig4ebook\system\CodeIgniter.php(941): App\Controllers\Books->addBook()
+#10 C:\xampp\htdocs\cig4ebook\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Books))
+#11 C:\xampp\htdocs\cig4ebook\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\cig4ebook\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\cig4ebook\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\cig4ebook\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\cig4ebook\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\cig4ebook\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `bo...', Array, false)
+#3 C:\xampp\htdocs\cig4ebook\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#4 C:\xampp\htdocs\cig4ebook\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#5 C:\xampp\htdocs\cig4ebook\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, false)
+#6 C:\xampp\htdocs\cig4ebook\system\BaseModel.php(713): CodeIgniter\Model->insert(Array, false)
+#7 C:\xampp\htdocs\cig4ebook\app\Controllers\Books.php(35): CodeIgniter\BaseModel->save(Array)
+#8 C:\xampp\htdocs\cig4ebook\system\CodeIgniter.php(941): App\Controllers\Books->addBook()
+#9 C:\xampp\htdocs\cig4ebook\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Books))
+#10 C:\xampp\htdocs\cig4ebook\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\cig4ebook\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-03-18 04:39:03 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `books` (`title`, `category`, `isbn`, `author`, `cover_image`, `book_file`) VALUES (:title:, :category:, :isbn:, :author:, :cover_image:, :book_file:)', [...], false)
+ 3 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], false)
+ 6 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->insert([...], false)
+ 7 APPPATH\Controllers\Books.php(35): CodeIgniter\BaseModel->save([...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Books->addBook()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Books))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-18 04:41:39 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\cig4ebook\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\htdocs\cig4ebook\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', '', '', 'swe2', 3306, '', 0)
+#1 C:\xampp\htdocs\cig4ebook\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\cig4ebook\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\cig4ebook\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `bo...', Array, false)
+#4 C:\xampp\htdocs\cig4ebook\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\cig4ebook\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\cig4ebook\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\cig4ebook\system\BaseModel.php(713): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\cig4ebook\app\Controllers\Books.php(35): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\cig4ebook\system\CodeIgniter.php(941): App\Controllers\Books->addBook()
+#10 C:\xampp\htdocs\cig4ebook\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Books))
+#11 C:\xampp\htdocs\cig4ebook\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\cig4ebook\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\cig4ebook\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\cig4ebook\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\cig4ebook\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\cig4ebook\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `bo...', Array, false)
+#3 C:\xampp\htdocs\cig4ebook\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#4 C:\xampp\htdocs\cig4ebook\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#5 C:\xampp\htdocs\cig4ebook\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, false)
+#6 C:\xampp\htdocs\cig4ebook\system\BaseModel.php(713): CodeIgniter\Model->insert(Array, false)
+#7 C:\xampp\htdocs\cig4ebook\app\Controllers\Books.php(35): CodeIgniter\BaseModel->save(Array)
+#8 C:\xampp\htdocs\cig4ebook\system\CodeIgniter.php(941): App\Controllers\Books->addBook()
+#9 C:\xampp\htdocs\cig4ebook\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Books))
+#10 C:\xampp\htdocs\cig4ebook\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\cig4ebook\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-03-18 04:41:39 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `books` (`title`, `category`, `isbn`, `author`, `cover_image`, `book_file`) VALUES (:title:, :category:, :isbn:, :author:, :cover_image:, :book_file:)', [...], false)
+ 3 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], false)
+ 6 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->insert([...], false)
+ 7 APPPATH\Controllers\Books.php(35): CodeIgniter\BaseModel->save([...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Books->addBook()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Books))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-18 04:42:16 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\cig4ebook\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\htdocs\cig4ebook\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', '', '', 'swe2', 3306, '', 0)
+#1 C:\xampp\htdocs\cig4ebook\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\cig4ebook\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\cig4ebook\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `bo...', Array, false)
+#4 C:\xampp\htdocs\cig4ebook\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\cig4ebook\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\cig4ebook\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\cig4ebook\system\BaseModel.php(713): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\cig4ebook\app\Controllers\Books.php(35): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\cig4ebook\system\CodeIgniter.php(941): App\Controllers\Books->addBook()
+#10 C:\xampp\htdocs\cig4ebook\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Books))
+#11 C:\xampp\htdocs\cig4ebook\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\cig4ebook\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\cig4ebook\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\cig4ebook\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\cig4ebook\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\cig4ebook\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\cig4ebook\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `bo...', Array, false)
+#3 C:\xampp\htdocs\cig4ebook\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#4 C:\xampp\htdocs\cig4ebook\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#5 C:\xampp\htdocs\cig4ebook\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, false)
+#6 C:\xampp\htdocs\cig4ebook\system\BaseModel.php(713): CodeIgniter\Model->insert(Array, false)
+#7 C:\xampp\htdocs\cig4ebook\app\Controllers\Books.php(35): CodeIgniter\BaseModel->save(Array)
+#8 C:\xampp\htdocs\cig4ebook\system\CodeIgniter.php(941): App\Controllers\Books->addBook()
+#9 C:\xampp\htdocs\cig4ebook\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Books))
+#10 C:\xampp\htdocs\cig4ebook\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\cig4ebook\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\cig4ebook\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-03-18 04:42:16 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `books` (`title`, `category`, `isbn`, `author`, `cover_image`, `book_file`) VALUES (:title:, :category:, :isbn:, :author:, :cover_image:, :book_file:)', [...], false)
+ 3 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], false)
+ 6 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->insert([...], false)
+ 7 APPPATH\Controllers\Books.php(35): CodeIgniter\BaseModel->save([...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Books->addBook()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Books))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\cig4ebook\\public\\index.php')
+ERROR - 2024-03-18 04:43:46 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\cig4ebook\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\htdocs\cig4ebook\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', '', '', 'swe2', 3306, '', 0)
+#1 C:\xampp\htdocs\cig4ebook\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\cig4ebook\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\cig4ebook\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `bo...', Array, false)
+#4 C:\xampp\htdocs\cig4ebook\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\cig4ebook\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\cig4ebook\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\cig4ebook\system\BaseModel.php(713): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\cig4ebook\app\Controllers\Books.php(35): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\cig4ebook\system\CodeIgniter.php(941): App\Controllers\Books->addBook()
+#10 C:\xampp\htdocs\cig4ebook\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Books))
+#11 C:\xampp\htdocs\cig4ebook\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\cig4ebook\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\cig4ebook\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\cig4ebook\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\cig4ebook\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\cig4ebook\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `bo...', Array, false)
+#3 C:\xampp\htdocs\cig4ebook\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#4 C:\xampp\htdocs\cig4ebook\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#5 C:\xampp\htdocs\cig4ebook\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, false)
+#6 C:\xampp\htdocs\cig4ebook\system\BaseModel.php(713): CodeIgniter\Model->insert(Array, false)
+#7 C:\xampp\htdocs\cig4ebook\app\Controllers\Books.php(35): CodeIgniter\BaseModel->save(Array)
+#8 C:\xampp\htdocs\cig4ebook\system\CodeIgniter.php(941): App\Controllers\Books->addBook()
+#9 C:\xampp\htdocs\cig4ebook\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Books))
+#10 C:\xampp\htdocs\cig4ebook\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\cig4ebook\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-03-18 04:43:46 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `books` (`title`, `category`, `isbn`, `author`, `cover_image`, `book_file`) VALUES (:title:, :category:, :isbn:, :author:, :cover_image:, :book_file:)', [...], false)
+ 3 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], false)
+ 6 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->insert([...], false)
+ 7 APPPATH\Controllers\Books.php(35): CodeIgniter\BaseModel->save([...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Books->addBook()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Books))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-18 04:43:55 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\cig4ebook\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\htdocs\cig4ebook\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', '', '', 'swe2', 3306, '', 0)
+#1 C:\xampp\htdocs\cig4ebook\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\cig4ebook\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\cig4ebook\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `bo...', Array, false)
+#4 C:\xampp\htdocs\cig4ebook\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\cig4ebook\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\cig4ebook\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\cig4ebook\system\BaseModel.php(713): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\cig4ebook\app\Controllers\Books.php(35): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\cig4ebook\system\CodeIgniter.php(941): App\Controllers\Books->addBook()
+#10 C:\xampp\htdocs\cig4ebook\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Books))
+#11 C:\xampp\htdocs\cig4ebook\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\cig4ebook\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\cig4ebook\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\cig4ebook\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\cig4ebook\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\cig4ebook\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `bo...', Array, false)
+#3 C:\xampp\htdocs\cig4ebook\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#4 C:\xampp\htdocs\cig4ebook\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#5 C:\xampp\htdocs\cig4ebook\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, false)
+#6 C:\xampp\htdocs\cig4ebook\system\BaseModel.php(713): CodeIgniter\Model->insert(Array, false)
+#7 C:\xampp\htdocs\cig4ebook\app\Controllers\Books.php(35): CodeIgniter\BaseModel->save(Array)
+#8 C:\xampp\htdocs\cig4ebook\system\CodeIgniter.php(941): App\Controllers\Books->addBook()
+#9 C:\xampp\htdocs\cig4ebook\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Books))
+#10 C:\xampp\htdocs\cig4ebook\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\cig4ebook\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-03-18 04:43:55 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `books` (`title`, `category`, `isbn`, `author`, `cover_image`, `book_file`) VALUES (:title:, :category:, :isbn:, :author:, :cover_image:, :book_file:)', [...], false)
+ 3 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], false)
+ 6 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->insert([...], false)
+ 7 APPPATH\Controllers\Books.php(35): CodeIgniter\BaseModel->save([...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Books->addBook()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Books))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-18 04:44:35 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\cig4ebook\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\htdocs\cig4ebook\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', '', '', 'swe2', 3306, '', 0)
+#1 C:\xampp\htdocs\cig4ebook\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\cig4ebook\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\cig4ebook\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `bo...', Array, false)
+#4 C:\xampp\htdocs\cig4ebook\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\cig4ebook\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\cig4ebook\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\cig4ebook\system\BaseModel.php(713): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\cig4ebook\app\Controllers\Books.php(35): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\cig4ebook\system\CodeIgniter.php(941): App\Controllers\Books->addBook()
+#10 C:\xampp\htdocs\cig4ebook\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Books))
+#11 C:\xampp\htdocs\cig4ebook\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\cig4ebook\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\cig4ebook\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\cig4ebook\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\cig4ebook\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\cig4ebook\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `bo...', Array, false)
+#3 C:\xampp\htdocs\cig4ebook\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#4 C:\xampp\htdocs\cig4ebook\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#5 C:\xampp\htdocs\cig4ebook\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, false)
+#6 C:\xampp\htdocs\cig4ebook\system\BaseModel.php(713): CodeIgniter\Model->insert(Array, false)
+#7 C:\xampp\htdocs\cig4ebook\app\Controllers\Books.php(35): CodeIgniter\BaseModel->save(Array)
+#8 C:\xampp\htdocs\cig4ebook\system\CodeIgniter.php(941): App\Controllers\Books->addBook()
+#9 C:\xampp\htdocs\cig4ebook\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Books))
+#10 C:\xampp\htdocs\cig4ebook\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\cig4ebook\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-03-18 04:44:35 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `books` (`title`, `category`, `isbn`, `author`, `cover_image`, `book_file`) VALUES (:title:, :category:, :isbn:, :author:, :cover_image:, :book_file:)', [...], false)
+ 3 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], false)
+ 6 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->insert([...], false)
+ 7 APPPATH\Controllers\Books.php(35): CodeIgniter\BaseModel->save([...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Books->addBook()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Books))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-18 04:44:38 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\cig4ebook\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\htdocs\cig4ebook\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', '', '', 'swe2', 3306, '', 0)
+#1 C:\xampp\htdocs\cig4ebook\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\cig4ebook\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\cig4ebook\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `bo...', Array, false)
+#4 C:\xampp\htdocs\cig4ebook\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\cig4ebook\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\cig4ebook\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\cig4ebook\system\BaseModel.php(713): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\cig4ebook\app\Controllers\Books.php(35): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\cig4ebook\system\CodeIgniter.php(941): App\Controllers\Books->addBook()
+#10 C:\xampp\htdocs\cig4ebook\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Books))
+#11 C:\xampp\htdocs\cig4ebook\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\cig4ebook\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\cig4ebook\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\cig4ebook\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\cig4ebook\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\cig4ebook\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `bo...', Array, false)
+#3 C:\xampp\htdocs\cig4ebook\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#4 C:\xampp\htdocs\cig4ebook\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#5 C:\xampp\htdocs\cig4ebook\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, false)
+#6 C:\xampp\htdocs\cig4ebook\system\BaseModel.php(713): CodeIgniter\Model->insert(Array, false)
+#7 C:\xampp\htdocs\cig4ebook\app\Controllers\Books.php(35): CodeIgniter\BaseModel->save(Array)
+#8 C:\xampp\htdocs\cig4ebook\system\CodeIgniter.php(941): App\Controllers\Books->addBook()
+#9 C:\xampp\htdocs\cig4ebook\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Books))
+#10 C:\xampp\htdocs\cig4ebook\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\cig4ebook\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-03-18 04:44:38 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `books` (`title`, `category`, `isbn`, `author`, `cover_image`, `book_file`) VALUES (:title:, :category:, :isbn:, :author:, :cover_image:, :book_file:)', [...], false)
+ 3 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], false)
+ 6 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->insert([...], false)
+ 7 APPPATH\Controllers\Books.php(35): CodeIgniter\BaseModel->save([...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Books->addBook()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Books))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-18 04:46:02 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\cig4ebook\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\htdocs\cig4ebook\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', '', '', 'swe2', 3306, '', 0)
+#1 C:\xampp\htdocs\cig4ebook\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\cig4ebook\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\cig4ebook\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\cig4ebook\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\cig4ebook\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\cig4ebook\app\Controllers\Books.php(44): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\cig4ebook\system\CodeIgniter.php(941): App\Controllers\Books->listBooks()
+#8 C:\xampp\htdocs\cig4ebook\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Books))
+#9 C:\xampp\htdocs\cig4ebook\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\cig4ebook\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\cig4ebook\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\cig4ebook\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\cig4ebook\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\cig4ebook\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\cig4ebook\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\cig4ebook\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\cig4ebook\app\Controllers\Books.php(44): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\cig4ebook\system\CodeIgniter.php(941): App\Controllers\Books->listBooks()
+#7 C:\xampp\htdocs\cig4ebook\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Books))
+#8 C:\xampp\htdocs\cig4ebook\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\cig4ebook\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-18 04:46:02 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `books`', [], false)
+ 3 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Books.php(44): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Books->listBooks()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Books))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-18 04:50:47 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\cig4ebook\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\htdocs\cig4ebook\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', '', '', 'swe2', 3306, '', 0)
+#1 C:\xampp\htdocs\cig4ebook\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\cig4ebook\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\cig4ebook\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\cig4ebook\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\cig4ebook\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\cig4ebook\app\Controllers\Books.php(44): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\cig4ebook\system\CodeIgniter.php(941): App\Controllers\Books->listBooks()
+#8 C:\xampp\htdocs\cig4ebook\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Books))
+#9 C:\xampp\htdocs\cig4ebook\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\cig4ebook\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\cig4ebook\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\cig4ebook\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\cig4ebook\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\cig4ebook\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\cig4ebook\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\cig4ebook\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\cig4ebook\app\Controllers\Books.php(44): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\cig4ebook\system\CodeIgniter.php(941): App\Controllers\Books->listBooks()
+#7 C:\xampp\htdocs\cig4ebook\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Books))
+#8 C:\xampp\htdocs\cig4ebook\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\cig4ebook\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-18 04:50:47 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `books`', [], false)
+ 3 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Books.php(44): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Books->listBooks()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Books))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
