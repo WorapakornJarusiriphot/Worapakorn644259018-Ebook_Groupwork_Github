@@ -7,6 +7,6 @@ use CodeIgniter\Router\RouteCollection;
  */
 // $routes->get('/', 'Home::index');
 $routes->get('/', 'Books::index');
-$routes->post('books/add', 'Books::addBook');
+$routes->post('books/addBook', 'Books::addBook');
 $routes->get('books/list', 'Books::listBooks');
 $routes->get('books/viewBook/(:segment)', 'Books::viewBook/$1');

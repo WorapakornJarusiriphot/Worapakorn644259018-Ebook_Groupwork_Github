@@ -1,4 +1,6 @@
-<?php namespace App\Controllers;
+<?php
+
+namespace App\Controllers;
 
 use App\Models\BookModel;
 use CodeIgniter\Controller;
@@ -13,36 +15,49 @@ class Books extends BaseController
     public function addBook()
     {
         $model = new BookModel();
+    
+        $title = $this->request->getVar('title');
+        if (empty($title)) {
+            // ถ้าไม่มีชื่อหนังสือ จะส่งข้อความข้อผิดพลาดกลับไปยังหน้าฟอร์ม
+            return redirect()->back()->with('error', 'Title is required.');
+        }
 
         $coverImage = $this->request->getFile('cover_image');
-        if ($coverImage->isValid() && !$coverImage->hasMoved()) {
+        $coverImageName = '';
+        // ตรวจสอบก่อนว่า $coverImage ไม่เป็น null และมีไฟล์ถูกส่งมาจริง
+        if ($coverImage && $coverImage->isValid() && !$coverImage->hasMoved()) {
             $coverImageName = $coverImage->getRandomName();
             $coverImage->move('uploads', $coverImageName);
+        } else {
+            // ตั้งค่า default หรือแจ้งเตือน error
+            $coverImageName = ''; // สามารถตั้งค่ารูปภาพ default หากไม่มีการอัพโหลดรูป
+            // หรือใช้ `return redirect()->back()->with('error', 'Invalid cover image.');` เพื่อส่งคืนข้อความ error
         }
 
-        $bookFile = $this->request->getFile('book_file');
-        if ($bookFile->isValid() && !$bookFile->hasMoved()) {
-            $bookFileName = $bookFile->getRandomName();
-            $bookFile->move('uploads', $bookFileName);
-        }
-
-        $model->save([
-            'title' => $this->request->getVar('title'),
+        // ตัวแปรที่เก็บค่าจากฟอร์ม
+        $data = [
+            'title' => $title,
             'category' => $this->request->getVar('category'),
             'isbn' => $this->request->getVar('isbn'),
             'author' => $this->request->getVar('author'),
+            'author_website' => $this->request->getVar('author_website'),
+            'publisher' => $this->request->getVar('publisher'),
             'cover_image' => $coverImageName,
-            'book_file' => $bookFileName,
-        ]);
+            'is_sample' => $this->request->getVar('is_sample') ? 1 : 0,
+        ];
 
-        return redirect()->to('/books/list');
+        if (!$model->save($data)) {
+            return redirect()->back()->with('errors', $model->errors());
+        }
+
+        return redirect()->to('/books/list')->with('message', 'Book added successfully.');
     }
 
     public function listBooks()
     {
         $model = new BookModel();
         $data['books'] = $model->findAll();
-        
+
         return view('list_books', $data);
     }
 
@@ -50,9 +65,9 @@ class Books extends BaseController
     {
         $model = new BookModel();
         $book = $model->find($id);
-        
+
         if ($book) {
-            $filePath = 'uploads/' . $book['book_file'];
+            $filePath = 'uploads/' . $book['cover_image']; // ปรับให้ใช้ 'cover_image' แทน 'book_file'
             if (file_exists($filePath)) {
                 return $this->response->download($filePath, null);
             } else {
